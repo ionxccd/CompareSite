@@ -6,11 +6,11 @@ import Header from "./components/Header.vue";
 import Grid from "./components/Grid.vue";
 </script>
 
-<script>
+<script type="text/javascript">
 export default {
   data() {
     return {
-      dimestions: [10, 55],
+      dimensions: [10, 55],
       results: [],
       showGrid: true,
       showClear: false,
@@ -19,6 +19,7 @@ export default {
       score: 0,
     };
   },
+  created() {},
   methods: {
     clear: function (event) {
       this.results = [];
@@ -41,6 +42,12 @@ export default {
       this.showGrid = true;
       this.showClear = true;
     },
+    updateTheVariable1(value) {
+      this.word1 = value;
+    },
+    updateTheVariable2(value) {
+      this.word2 = value;
+    },
   },
 };
 </script>
@@ -60,17 +67,17 @@ export default {
         <div class="d-flex flex-row justify-content-around align-items-center">
           <div>
             <textarea
-              :rows="this.dimestions[0]"
-              :cols="this.dimestions[1]"
+              :rows="dimensions[0]"
+              :cols="dimensions[1]"
               style="resize: none"
-              v-model="word1"
+              @input="updateTheVariable1($event.target.value)"
             ></textarea>
           </div>
           <div>
             <textarea
-              :rows="this.dimestions[0]"
-              :cols="this.dimestions[1]"
-              v-model="word2"
+              :rows="dimensions[0]"
+              :cols="dimensions[1]"
+              @input="updateTheVariable2($event.target.value)"
               style="resize: none"
             ></textarea>
           </div>
