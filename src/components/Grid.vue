@@ -1,6 +1,4 @@
 <script>
-import.meta.env;
-
 export default {
   props: ["results", "showGrid"],
 };

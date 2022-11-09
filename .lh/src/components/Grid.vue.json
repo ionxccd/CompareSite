@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1667937933936,
@@ -52,6 +52,10 @@
                 {
                     "date": 1667940006116,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n <script>\r\n import.meta.env;\r\n \r\n export default {\r\n-  props: [\"results\", \"value1\"],\r\n+  props: [\"results\", \"showGrid\"],\r\n };\r\n </script>\r\n \r\n <template>\r\n   <div class=\"container bg-red\">\r\n-    <table class=\"table\" v-show=\"value1\">\r\n+    <table class=\"table\" v-show=\"showGrid\">\r\n       <thead>\r\n         <tr>\r\n           <th scope=\"col\">#</th>\r\n           <th scope=\"col\">Teacher Key</th>\r\n"
+                },
+                {
+                    "date": 1667953456227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n <script>\r\n-import.meta.env;\r\n-\r\n export default {\r\n   props: [\"results\", \"showGrid\"],\r\n };\r\n </script>\r\n"
                 }
             ],
             "date": 1667937933936,
