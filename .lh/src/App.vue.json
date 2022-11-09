@@ -1,0 +1,266 @@
+{
+    "sourceFile": "src/App.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 62,
+            "patches": [
+                {
+                    "date": 1667683493131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1667683557662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,20 +3,22 @@\n import TheWelcome from \"./components/TheWelcome.vue\";\n </script>\n \n <template>\n-  <header>\n-    <img\n-      alt=\"Vue logo\"\n-      class=\"logo\"\n-      src=\"./assets/logo.svg\"\n-      width=\"125\"\n-      height=\"125\"\n-    />\n-\n-    <div class=\"wrapper\">\n-      <HelloWorld msg=\"You did it!\" />\n-    </div>\n+  <header class=\"py-3\">\n+    <nav class=\"navbar navbar-expand-lg\">\n+      <div class=\"container\">\n+        <img src=\"./assets/images/logo.png\" class=\"navbar-brand\" width=\"200\" />\n+        <div class=\"collapse navbar-collapse\">\n+          <ul class=\"navbar-nav\">\n+            <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\n+            <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\n+            <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Pricing</a></li>\n+          </ul>\n+        </div>\n+        <a href=\"#\" class=\"nav-link\">Sign In</a>\n+      </div>\n+    </nav>\n   </header>\n </template>\n \n <style scoped>\n"
+                },
+                {
+                    "date": 1667683575816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,34 +18,21 @@\n         <a href=\"#\" class=\"nav-link\">Sign In</a>\n       </div>\n     </nav>\n   </header>\n+  <main class=\"mt-5\">\n+    <div class=\"container\">\n+      <section>\n+        <div class=\"row d-flex justify-content-center mb-4\">\n+          <div class=\"col-md-8\">\n+            <p>\n+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime\n+              soluta natus assumenda vitae eaque quibusdam ipsa quam harum\n+              quisquam error. Delectus accusantium doloribus pariatur aperiam\n+              totam, explicabo suscipit iusto praesentium.\n+            </p>\n+          </div>\n+        </div>\n+      </section>\n+    </div>\n+  </main>\n </template>\n-\n-<style scoped>\n-header {\n-  line-height: 1.5;\n-}\n-\n-.logo {\n-  display: block;\n-  margin: 0 auto 2rem;\n-}\n-\n-@media (min-width: 1024px) {\n-  header {\n-    display: flex;\n-    place-items: center;\n-    padding-right: calc(var(--section-gap) / 2);\n-  }\n-\n-  .logo {\n-    margin: 0 2rem 0 0;\n-  }\n-\n-  header .wrapper {\n-    display: flex;\n-    place-items: flex-start;\n-    flex-wrap: wrap;\n-  }\n-}\n-</style>\n"
+                },
+                {
+                    "date": 1667683584164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n </script>\n \n <template>\n   <header class=\"py-3\">\n-    <nav class=\"navbar navbar-expand-lg\">\n+    <nav class=\"navbar navbar-expand-lg nav-dark\">\n       <div class=\"container\">\n         <img src=\"./assets/images/logo.png\" class=\"navbar-brand\" width=\"200\" />\n         <div class=\"collapse navbar-collapse\">\n           <ul class=\"navbar-nav\">\n"
+                },
+                {
+                    "date": 1667683589440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n </script>\n \n <template>\n   <header class=\"py-3\">\n-    <nav class=\"navbar navbar-expand-lg nav-dark\">\n+    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n       <div class=\"container\">\n         <img src=\"./assets/images/logo.png\" class=\"navbar-brand\" width=\"200\" />\n         <div class=\"collapse navbar-collapse\">\n           <ul class=\"navbar-nav\">\n"
+                },
+                {
+                    "date": 1667683620677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n <template>\n   <header class=\"py-3\">\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\n       <div class=\"container\">\n-        <img src=\"./assets/images/logo.png\" class=\"navbar-brand\" width=\"200\" />\n         <div class=\"collapse navbar-collapse\">\n           <ul class=\"navbar-nav\">\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\n"
+                },
+                {
+                    "date": 1667683642040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n <template>\n   <header class=\"py-3\">\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\n       <div class=\"container\">\n+        <h1 class=\"navbar-brand\">Home</h1>\n         <div class=\"collapse navbar-collapse\">\n           <ul class=\"navbar-nav\">\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\n"
+                },
+                {
+                    "date": 1667683649827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n <template>\n   <header class=\"py-3\">\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\n       <div class=\"container\">\n-        <h1 class=\"navbar-brand\">Home</h1>\n+        <h1 class=\"navbar-brand bg-dark\">Home</h1>\n         <div class=\"collapse navbar-collapse\">\n           <ul class=\"navbar-nav\">\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\n"
+                },
+                {
+                    "date": 1667683658808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n <template>\n   <header class=\"py-3\">\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\n       <div class=\"container\">\n-        <h1 class=\"navbar-brand bg-dark\">Home</h1>\n+        <h1 class=\"navbar-brand font-dark\">Home</h1>\n         <div class=\"collapse navbar-collapse\">\n           <ul class=\"navbar-nav\">\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\n"
+                },
+                {
+                    "date": 1667683731424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n <template>\n   <header class=\"py-3\">\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\n       <div class=\"container\">\n-        <h1 class=\"navbar-brand font-dark\">Home</h1>\n+        <h1 class=\"navbar-brand text-dark\">Home</h1>\n         <div class=\"collapse navbar-collapse\">\n           <ul class=\"navbar-nav\">\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\n"
+                },
+                {
+                    "date": 1667683772638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,15 +23,13 @@\n     <div class=\"container\">\n       <section>\n         <div class=\"row d-flex justify-content-center mb-4\">\n           <div class=\"col-md-8\">\n-            <p>\n-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime\n-              soluta natus assumenda vitae eaque quibusdam ipsa quam harum\n-              quisquam error. Delectus accusantium doloribus pariatur aperiam\n-              totam, explicabo suscipit iusto praesentium.\n-            </p>\n+            <input />\n           </div>\n+          <div class=\"col-md-8\">\n+            <input />\n+          </div>\n         </div>\n       </section>\n     </div>\n   </main>\n"
+                },
+                {
+                    "date": 1667683789845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,12 @@\n   <main class=\"mt-5\">\n     <div class=\"container\">\n       <section>\n         <div class=\"row d-flex justify-content-center mb-4\">\n-          <div class=\"col-md-8\">\n+          <div class=\"col-md-4\">\n             <input />\n           </div>\n-          <div class=\"col-md-8\">\n+          <div class=\"col-md-4\">\n             <input />\n           </div>\n         </div>\n       </section>\n"
+                },
+                {
+                    "date": 1667683825942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   </header>\n   <main class=\"mt-5\">\n     <div class=\"container\">\n       <section>\n-        <div class=\"row d-flex justify-content-center mb-4\">\n+        <div class=\"d-flex flex-row justify-content-around align-items-center\">\n           <div class=\"col-md-4\">\n             <input />\n           </div>\n           <div class=\"col-md-4\">\n"
+                },
+                {
+                    "date": 1667683844453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,12 @@\n   <main class=\"mt-5\">\n     <div class=\"container\">\n       <section>\n         <div class=\"d-flex flex-row justify-content-around align-items-center\">\n-          <div class=\"col-md-4\">\n+          <div>\n             <input />\n           </div>\n-          <div class=\"col-md-4\">\n+          <div>\n             <input />\n           </div>\n         </div>\n       </section>\n"
+                },
+                {
+                    "date": 1667689899889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,19 @@\n import HelloWorld from \"./components/HelloWorld.vue\";\n import TheWelcome from \"./components/TheWelcome.vue\";\n </script>\n \n+<script>\n+var stringSimilarity = require(\"string-similarity\");\n+function compare() {\n+  var am = stringSimilarity.compareTwoStrings(\n+    \"Olive-green table for sale, in extremely good condition.\",\n+    \"For sale: table in very good  condition, olive green in colour.\"\n+  );\n+  console.log(am);\n+}\n+</script>\n+\n <template>\n   <header class=\"py-3\">\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\n       <div class=\"container\">\n@@ -30,7 +41,8 @@\n             <input />\n           </div>\n         </div>\n       </section>\n+      <button onclick=\"compare()\">Compare</button>\n     </div>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667689935441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n <script setup>\n import HelloWorld from \"./components/HelloWorld.vue\";\n import TheWelcome from \"./components/TheWelcome.vue\";\n+var stringSimilarity = require(\"string-similarity\");\n </script>\n \n <script>\n-var stringSimilarity = require(\"string-similarity\");\n function compare() {\n   var am = stringSimilarity.compareTwoStrings(\n     \"Olive-green table for sale, in extremely good condition.\",\n     \"For sale: table in very good  condition, olive green in colour.\"\n"
+                },
+                {
+                    "date": 1667690268016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <script setup>\n import HelloWorld from \"./components/HelloWorld.vue\";\n import TheWelcome from \"./components/TheWelcome.vue\";\n-var stringSimilarity = require(\"string-similarity\");\n+// var stringSimilarity = require(\"string-similarity\");\n+import stringSimilarity from \"string-similarity\";\n </script>\n \n <script>\n function compare() {\n"
+                },
+                {
+                    "date": 1667690319609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,8 @@\n             <input />\n           </div>\n         </div>\n       </section>\n-      <button onclick=\"compare()\">Compare</button>\n+      <button @click=\"compare\">Compare</button>\n     </div>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667690400891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,18 @@\n import HelloWorld from \"./components/HelloWorld.vue\";\n import TheWelcome from \"./components/TheWelcome.vue\";\n // var stringSimilarity = require(\"string-similarity\");\n import stringSimilarity from \"string-similarity\";\n+import distance from \"jaro-winkler\";\n </script>\n \n <script>\n function compare() {\n+  var am2 = distance(\n+    \"Olive-green table for sale, in extremely good condition.\",\n+    \"For sale: table in very good  condition, olive green in colour.\"\n+  );\n+  console.log(am2);\n   var am = stringSimilarity.compareTwoStrings(\n     \"Olive-green table for sale, in extremely good condition.\",\n     \"For sale: table in very good  condition, olive green in colour.\"\n   );\n"
+                },
+                {
+                    "date": 1667690487603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,15 @@\n <script setup>\n import HelloWorld from \"./components/HelloWorld.vue\";\n import TheWelcome from \"./components/TheWelcome.vue\";\n // var stringSimilarity = require(\"string-similarity\");\n-import stringSimilarity from \"string-similarity\";\n+// import stringSimilarity from \"string-similarity\";\n import distance from \"jaro-winkler\";\n+// var am = stringSimilarity.compareTwoStrings(\n+//   \"Olive-green table for sale, in extremely good condition.\",\n+//   \"For sale: table in very good  condition, olive green in colour.\"\n+// );\n+// console.log(am);\n </script>\n \n <script>\n function compare() {\n@@ -12,13 +17,8 @@\n     \"Olive-green table for sale, in extremely good condition.\",\n     \"For sale: table in very good  condition, olive green in colour.\"\n   );\n   console.log(am2);\n-  var am = stringSimilarity.compareTwoStrings(\n-    \"Olive-green table for sale, in extremely good condition.\",\n-    \"For sale: table in very good  condition, olive green in colour.\"\n-  );\n-  console.log(am);\n }\n </script>\n \n <template>\n@@ -48,8 +48,8 @@\n             <input />\n           </div>\n         </div>\n       </section>\n-      <button @click=\"compare\">Compare</button>\n     </div>\n+    <button @click=\"compare\">Compare</button>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667690501274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,7 +49,9 @@\n           </div>\n         </div>\n       </section>\n     </div>\n-    <button @click=\"compare\">Compare</button>\n+    <div>\n+      <button @click=\"compare\">Compare</button>\n+    </div>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667690509045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n           </div>\n         </div>\n       </section>\n     </div>\n-    <div>\n+    <div class=\"container\">\n       <button @click=\"compare\">Compare</button>\n     </div>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667690899041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n \n <script>\n function compare() {\n   var am2 = distance(\n-    \"Olive-green table for sale, in extremely good condition.\",\n-    \"For sale: table in very good  condition, olive green in colour.\"\n+    document.getElementById(\"word1\").value,\n+    document.getElementById(\"word2\").value\n   );\n   console.log(am2);\n }\n </script>\n@@ -41,12 +41,12 @@\n     <div class=\"container\">\n       <section>\n         <div class=\"d-flex flex-row justify-content-around align-items-center\">\n           <div>\n-            <input />\n+            <input type=\"text\" name=\"word1\" />\n           </div>\n           <div>\n-            <input />\n+            <input type=\"text\" name=\"word2\" />\n           </div>\n         </div>\n       </section>\n     </div>\n"
+                },
+                {
+                    "date": 1667690919762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n \n <script>\n function compare() {\n   var am2 = distance(\n-    document.getElementById(\"word1\").value,\n-    document.getElementById(\"word2\").value\n+    document.getElementById(\"word1\").textContent,\n+    document.getElementById(\"word2\").textContent\n   );\n   console.log(am2);\n }\n </script>\n"
+                },
+                {
+                    "date": 1667691073056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,9 @@\n </script>\n \n <script>\n function compare() {\n-  var am2 = distance(\n-    document.getElementById(\"word1\").textContent,\n-    document.getElementById(\"word2\").textContent\n-  );\n+  var am2 = distance(document.querySelector(\"input[name=word1]\"), \"1\");\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667691096620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n </script>\n \n <script>\n function compare() {\n-  var am2 = distance(document.querySelector(\"input[name=word1]\"), \"1\");\n+  var am2 = distance(document.querySelector(\"input[name=word1]\"), 1);\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667691107761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n </script>\n \n <script>\n function compare() {\n-  var am2 = distance(document.querySelector(\"input[name=word1]\"), 1);\n+  var am2 = distance(document.querySelector(\"input[name=word1]\"), \"a\");\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667691136045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n </script>\n \n <script>\n function compare() {\n-  var am2 = distance(document.querySelector(\"input[name=word1]\"), \"a\");\n+  console.log(document.querySelector(\"input[name=word1]\"));\n+  var am2 = distance(\"a\", \"a\");\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667691155009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n </script>\n \n <script>\n function compare() {\n-  console.log(document.querySelector(\"input[name=word1]\"));\n+  console.log(document.querySelector(\"input[name=word1]\").value);\n   var am2 = distance(\"a\", \"a\");\n   console.log(am2);\n }\n </script>\n"
+                },
+                {
+                    "date": 1667691202925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n </script>\n \n <script>\n function compare() {\n-  console.log(document.querySelector(\"input[name=word1]\").value);\n-  var am2 = distance(\"a\", \"a\");\n+  word1 = document.querySelector(\"input[name=word1]\").value;\n+  var am2 = distance(word1, \"a\");\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667691243106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n </script>\n \n <script>\n function compare() {\n-  word1 = document.querySelector(\"input[name=word1]\").value;\n+  var word1 = document.querySelector(\"input[name=word1]\").value;\n   var am2 = distance(word1, \"a\");\n   console.log(am2);\n }\n </script>\n"
+                },
+                {
+                    "date": 1667691313049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n \n <script>\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n-  var am2 = distance(word1, \"a\");\n+  var word2 = document.querySelector(\"input[name=word2]\").value;\n+  var am2 = distance(word1, word2);\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667739493630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n <script>\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n-  var am2 = distance(word1, word2);\n+  var am2 = distance(word1, word2, { caseSensitive: false });\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667739514342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n <script>\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n-  var am2 = distance(word1, word2, { caseSensitive: false });\n+  var am2 = distance(word1, word2, { caseSensitive: true });\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667739527342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n <script>\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n-  var am2 = distance(word1, word2, { caseSensitive: true });\n+  var am2 = distance(word1, word2, { caseSensitive: false });\n   console.log(am2);\n }\n </script>\n \n"
+                },
+                {
+                    "date": 1667739591747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <div class=\"container\">\n       <section>\n         <div class=\"d-flex flex-row justify-content-around align-items-center\">\n           <div>\n-            <input type=\"text\" name=\"word1\" />\n+            <input type=\"text\" name=\"word1\" width=\"100\" height=\"100\" />\n           </div>\n           <div>\n             <input type=\"text\" name=\"word2\" />\n           </div>\n"
+                },
+                {
+                    "date": 1667739596863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <div class=\"container\">\n       <section>\n         <div class=\"d-flex flex-row justify-content-around align-items-center\">\n           <div>\n-            <input type=\"text\" name=\"word1\" width=\"100\" height=\"100\" />\n+            <input type=\"text\" name=\"word1\" width=\"100\" height=\"1000\" />\n           </div>\n           <div>\n             <input type=\"text\" name=\"word2\" />\n           </div>\n"
+                },
+                {
+                    "date": 1667739613693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <div class=\"container\">\n       <section>\n         <div class=\"d-flex flex-row justify-content-around align-items-center\">\n           <div>\n-            <input type=\"text\" name=\"word1\" width=\"100\" height=\"1000\" />\n+            <input type=\"text\" name=\"word1\" width=\"100\" :height=\"1000\" />\n           </div>\n           <div>\n             <input type=\"text\" name=\"word2\" />\n           </div>\n"
+                },
+                {
+                    "date": 1667739701635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <div class=\"container\">\n       <section>\n         <div class=\"d-flex flex-row justify-content-around align-items-center\">\n           <div>\n-            <input type=\"text\" name=\"word1\" width=\"100\" :height=\"1000\" />\n+            <input type=\"text\" name=\"word1\" width=\"100px\" height=\"1000\" />\n           </div>\n           <div>\n             <input type=\"text\" name=\"word2\" />\n           </div>\n"
+                },
+                {
+                    "date": 1667739785713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     <div class=\"container\">\n       <section>\n         <div class=\"d-flex flex-row justify-content-around align-items-center\">\n           <div>\n-            <input type=\"text\" name=\"word1\" width=\"100px\" height=\"1000\" />\n+            <input type=\"text\" name=\"word1\" width=\"100px\" height=\"1000px\" />\n           </div>\n           <div>\n             <input type=\"text\" name=\"word2\" />\n           </div>\n@@ -51,6 +51,26 @@\n     </div>\n     <div class=\"container\">\n       <button @click=\"compare\">Compare</button>\n     </div>\n+    <table class=\"table\">\n+      <thead>\n+        <tr>\n+          <th scope=\"col\">#</th>\n+          <th scope=\"col\">Teacher Answer</th>\n+          <th scope=\"col\">Student Answer</th>\n+          <th scope=\"col\">Score</th>\n+        </tr>\n+      </thead>\n+      {% for i in info %}\n+      <tbody>\n+        <tr>\n+          <th scope=\"row\">{{ i.index }}</th>\n+          <td>{{ i.key }}</td>\n+          <td>{{ i.answer }}</td>\n+          <td>{{ i.score }}</td>\n+        </tr>\n+      </tbody>\n+      {% endfor %}\n+    </table>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667739794743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,17 +60,15 @@\n           <th scope=\"col\">Student Answer</th>\n           <th scope=\"col\">Score</th>\n         </tr>\n       </thead>\n-      {% for i in info %}\n       <tbody>\n         <tr>\n           <th scope=\"row\">{{ i.index }}</th>\n           <td>{{ i.key }}</td>\n           <td>{{ i.answer }}</td>\n           <td>{{ i.score }}</td>\n         </tr>\n-      </tbody>\n-      {% endfor %}\n+      </tbody\n     </table>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667739854000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,12 +63,12 @@\n       </thead>\n       <tbody>\n         <tr>\n           <th scope=\"row\">{{ i.index }}</th>\n-          <td>{{ i.key }}</td>\n-          <td>{{ i.answer }}</td>\n-          <td>{{ i.score }}</td>\n+          <td>{{ i.key }}s</td>\n+          <td>{{ i.answer }}s</td>\n+          <td>{{ i.score }}s</td>\n         </tr>\n-      </tbody\n+      </tbody>\n     </table>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667739886403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,12 +62,12 @@\n         </tr>\n       </thead>\n       <tbody>\n         <tr>\n-          <th scope=\"row\">{{ i.index }}</th>\n-          <td>{{ i.key }}s</td>\n-          <td>{{ i.answer }}s</td>\n-          <td>{{ i.score }}s</td>\n+          <th scope=\"row\">e</th>\n+          <td>{s</td>\n+          <td>s</td>\n+          <td>s</td>\n         </tr>\n       </tbody>\n     </table>\n   </main>\n"
+                },
+                {
+                    "date": 1667739914535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n           </div>\n         </div>\n       </section>\n     </div>\n-    <div class=\"container\">\n+    <div class=\"container justify-center\">\n       <button @click=\"compare\">Compare</button>\n     </div>\n     <table class=\"table\">\n       <thead>\n"
+                },
+                {
+                    "date": 1667739919799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n         </div>\n       </section>\n     </div>\n     <div class=\"container justify-center\">\n-      <button @click=\"compare\">Compare</button>\n+      <button @click=\"compare\" class=\"justify-center\">Compare</button>\n     </div>\n     <table class=\"table\">\n       <thead>\n         <tr>\n"
+                },
+                {
+                    "date": 1667740032927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,24 +51,26 @@\n     </div>\n     <div class=\"container justify-center\">\n       <button @click=\"compare\" class=\"justify-center\">Compare</button>\n     </div>\n-    <table class=\"table\">\n-      <thead>\n-        <tr>\n-          <th scope=\"col\">#</th>\n-          <th scope=\"col\">Teacher Answer</th>\n-          <th scope=\"col\">Student Answer</th>\n-          <th scope=\"col\">Score</th>\n-        </tr>\n-      </thead>\n-      <tbody>\n-        <tr>\n-          <th scope=\"row\">e</th>\n-          <td>{s</td>\n-          <td>s</td>\n-          <td>s</td>\n-        </tr>\n-      </tbody>\n-    </table>\n+    <div class=\"container\">\n+      <table class=\"table\">\n+        <thead>\n+          <tr>\n+            <th scope=\"col\">#</th>\n+            <th scope=\"col\">Teacher Answer</th>\n+            <th scope=\"col\">Student Answer</th>\n+            <th scope=\"col\">Score</th>\n+          </tr>\n+        </thead>\n+        <tbody>\n+          <tr>\n+            <th scope=\"row\">e</th>\n+            <td>{s</td>\n+            <td>s</td>\n+            <td>s</td>\n+          </tr>\n+        </tbody>\n+      </table>\n+    </div>\n   </main>\n </template>\n"
+                },
+                {
+                    "date": 1667740113629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n           </div>\n         </div>\n       </section>\n     </div>\n-    <div class=\"container justify-center\">\n+    <div class=\"container text-center\">\n       <button @click=\"compare\" class=\"justify-center\">Compare</button>\n     </div>\n     <div class=\"container\">\n       <table class=\"table\">\n"
+                },
+                {
+                    "date": 1667740172785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     <div class=\"container text-center\">\n       <button @click=\"compare\" class=\"justify-center\">Compare</button>\n     </div>\n     <div class=\"container\">\n-      <table class=\"table\">\n+      <table class=\"table\" v-show=\"tableShow\">\n         <thead>\n           <tr>\n             <th scope=\"col\">#</th>\n             <th scope=\"col\">Teacher Answer</th>\n"
+                },
+                {
+                    "date": 1667740249937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n     <div class=\"container text-center\">\n       <button @click=\"compare\" class=\"justify-center\">Compare</button>\n     </div>\n     <div class=\"container\">\n-      <table class=\"table\" v-show=\"tableShow\">\n+      <table class=\"table\" v-show=\"!tableShow\">\n         <thead>\n           <tr>\n             <th scope=\"col\">#</th>\n             <th scope=\"col\">Teacher Answer</th>\n"
+                },
+                {
+                    "date": 1667740273363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n   console.log(am2);\n+  tableShow = true;\n }\n </script>\n \n <template>\n@@ -52,9 +53,9 @@\n     <div class=\"container text-center\">\n       <button @click=\"compare\" class=\"justify-center\">Compare</button>\n     </div>\n     <div class=\"container\">\n-      <table class=\"table\" v-show=\"!tableShow\">\n+      <table class=\"table\" v-show=\"tableShow\">\n         <thead>\n           <tr>\n             <th scope=\"col\">#</th>\n             <th scope=\"col\">Teacher Answer</th>\n"
+                },
+                {
+                    "date": 1667740385382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n   console.log(am2);\n-  tableShow = true;\n }\n </script>\n \n <template>\n@@ -50,9 +49,11 @@\n         </div>\n       </section>\n     </div>\n     <div class=\"container text-center\">\n-      <button @click=\"compare\" class=\"justify-center\">Compare</button>\n+      <button @click=\"compare, (tableShow = !tableShow)\" class=\"justify-center\">\n+        Compare\n+      </button>\n     </div>\n     <div class=\"container\">\n       <table class=\"table\" v-show=\"tableShow\">\n         <thead>\n"
+                },
+                {
+                    "date": 1667740500065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,17 @@\n   console.log(am2);\n }\n </script>\n \n+<script>\n+var app = new Vue({\n+  el: \"#app\",\n+  data: {\n+    message: false,\n+  },\n+});\n+</script>\n+\n <template>\n   <header class=\"py-3\">\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\n       <div class=\"container\">\n@@ -54,9 +63,9 @@\n         Compare\n       </button>\n     </div>\n     <div class=\"container\">\n-      <table class=\"table\" v-show=\"tableShow\">\n+      <table class=\"table\" v-show=\"message\">\n         <thead>\n           <tr>\n             <th scope=\"col\">#</th>\n             <th scope=\"col\">Teacher Answer</th>\n"
+                },
+                {
+                    "date": 1667740511187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,8 @@\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n   console.log(am2);\n }\n-</script>\n-\n-<script>\n var app = new Vue({\n   el: \"#app\",\n   data: {\n     message: false,\n"
+                },
+                {
+                    "date": 1667740536535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n import TheWelcome from \"./components/TheWelcome.vue\";\n // var stringSimilarity = require(\"string-similarity\");\n // import stringSimilarity from \"string-similarity\";\n import distance from \"jaro-winkler\";\n+import { Vue } from \"vue\";\n // var am = stringSimilarity.compareTwoStrings(\n //   \"Olive-green table for sale, in extremely good condition.\",\n //   \"For sale: table in very good  condition, olive green in colour.\"\n // );\n"
+                },
+                {
+                    "date": 1667740555370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import TheWelcome from \"./components/TheWelcome.vue\";\n // var stringSimilarity = require(\"string-similarity\");\n // import stringSimilarity from \"string-similarity\";\n import distance from \"jaro-winkler\";\n-import { Vue } from \"vue\";\n+// import { Vue } from \"vue\";\n // var am = stringSimilarity.compareTwoStrings(\n //   \"Olive-green table for sale, in extremely good condition.\",\n //   \"For sale: table in very good  condition, olive green in colour.\"\n // );\n"
+                },
+                {
+                    "date": 1667740573522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,14 +18,8 @@\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n   console.log(am2);\n }\n-var app = new Vue({\n-  el: \"#app\",\n-  data: {\n-    message: false,\n-  },\n-});\n </script>\n \n <template>\n   <header class=\"py-3\">\n"
+                },
+                {
+                    "date": 1667740675409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,25 @@\n // );\n // console.log(am);\n </script>\n \n+<!-- <script>\n+  function compare() {\n+    var word1 = document.querySelector(\"input[name=word1]\").value;\n+    var word2 = document.querySelector(\"input[name=word2]\").value;\n+    var am2 = distance(word1, word2, { caseSensitive: false });\n+    console.log(am2);\n+  }\n+  </script> -->\n+<script src=\"https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js\"></script>\n+\n <script>\n-function compare() {\n-  var word1 = document.querySelector(\"input[name=word1]\").value;\n-  var word2 = document.querySelector(\"input[name=word2]\").value;\n-  var am2 = distance(word1, word2, { caseSensitive: false });\n-  console.log(am2);\n-}\n+var demo = new Vue({\n+  el: \"#demo\",\n+  data: {\n+    message: \"Hello Vue.js!\",\n+  },\n+});\n </script>\n \n <template>\n   <header class=\"py-3\">\n"
+                },
+                {
+                    "date": 1667740751133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,25 +11,16 @@\n // );\n // console.log(am);\n </script>\n \n-<!-- <script>\n-  function compare() {\n-    var word1 = document.querySelector(\"input[name=word1]\").value;\n-    var word2 = document.querySelector(\"input[name=word2]\").value;\n-    var am2 = distance(word1, word2, { caseSensitive: false });\n-    console.log(am2);\n-  }\n-  </script> -->\n-<script src=\"https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js\"></script>\n-\n <script>\n-var demo = new Vue({\n-  el: \"#demo\",\n-  data: {\n-    message: \"Hello Vue.js!\",\n-  },\n-});\n+const Vue = window.vue;\n+function compare() {\n+  var word1 = document.querySelector(\"input[name=word1]\").value;\n+  var word2 = document.querySelector(\"input[name=word2]\").value;\n+  var am2 = distance(word1, word2, { caseSensitive: false });\n+  console.log(am2);\n+}\n </script>\n \n <template>\n   <header class=\"py-3\">\n"
+                },
+                {
+                    "date": 1667740776277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n import TheWelcome from \"./components/TheWelcome.vue\";\n // var stringSimilarity = require(\"string-similarity\");\n // import stringSimilarity from \"string-similarity\";\n import distance from \"jaro-winkler\";\n+import Vue from \"Vue\";\n // import { Vue } from \"vue\";\n // var am = stringSimilarity.compareTwoStrings(\n //   \"Olive-green table for sale, in extremely good condition.\",\n //   \"For sale: table in very good  condition, olive green in colour.\"\n@@ -12,9 +13,14 @@\n // console.log(am);\n </script>\n \n <script>\n-const Vue = window.vue;\n+var demo = new Vue({\n+  el: \"#demo\",\n+  data: {\n+    message: \"Hello Vue.js!\",\n+  },\n+});\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n"
+                },
+                {
+                    "date": 1667888075068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n // var stringSimilarity = require(\"string-similarity\");\n // import stringSimilarity from \"string-similarity\";\n import distance from \"jaro-winkler\";\n import Vue from \"Vue\";\n+import stuff from \".dummy_text\";\n // import { Vue } from \"vue\";\n // var am = stringSimilarity.compareTwoStrings(\n //   \"Olive-green table for sale, in extremely good condition.\",\n //   \"For sale: table in very good  condition, olive green in colour.\"\n@@ -19,8 +20,9 @@\n   data: {\n     message: \"Hello Vue.js!\",\n   },\n });\n+\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n"
+                },
+                {
+                    "date": 1667888094541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n // var stringSimilarity = require(\"string-similarity\");\n // import stringSimilarity from \"string-similarity\";\n import distance from \"jaro-winkler\";\n import Vue from \"Vue\";\n-import stuff from \".dummy_text\";\n+// import stuff from \".dummy_text\";\n // import { Vue } from \"vue\";\n // var am = stringSimilarity.compareTwoStrings(\n //   \"Olive-green table for sale, in extremely good condition.\",\n //   \"For sale: table in very good  condition, olive green in colour.\"\n@@ -14,15 +14,8 @@\n // console.log(am);\n </script>\n \n <script>\n-var demo = new Vue({\n-  el: \"#demo\",\n-  data: {\n-    message: \"Hello Vue.js!\",\n-  },\n-});\n-\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n"
+                },
+                {
+                    "date": 1667888135198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n // var stringSimilarity = require(\"string-similarity\");\n // import stringSimilarity from \"string-similarity\";\n import distance from \"jaro-winkler\";\n import Vue from \"Vue\";\n-import stuff from \".dummy_text\";\n // import { Vue } from \"vue\";\n // var am = stringSimilarity.compareTwoStrings(\n //   \"Olive-green table for sale, in extremely good condition.\",\n //   \"For sale: table in very good  condition, olive green in colour.\"\n@@ -14,15 +13,8 @@\n // console.log(am);\n </script>\n \n <script>\n-var demo = new Vue({\n-  el: \"#demo\",\n-  data: {\n-    message: \"Hello Vue.js!\",\n-  },\n-});\n-\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n"
+                },
+                {
+                    "date": 1667888141605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n // var stringSimilarity = require(\"string-similarity\");\n // import stringSimilarity from \"string-similarity\";\n import distance from \"jaro-winkler\";\n import Vue from \"Vue\";\n-import stuff from \".dummy_text\";\n // import { Vue } from \"vue\";\n // var am = stringSimilarity.compareTwoStrings(\n //   \"Olive-green table for sale, in extremely good condition.\",\n //   \"For sale: table in very good  condition, olive green in colour.\"\n@@ -14,15 +13,8 @@\n // console.log(am);\n </script>\n \n <script>\n-var demo = new Vue({\n-  el: \"#demo\",\n-  data: {\n-    message: \"Hello Vue.js!\",\n-  },\n-});\n-\n function compare() {\n   var word1 = document.querySelector(\"input[name=word1]\").value;\n   var word2 = document.querySelector(\"input[name=word2]\").value;\n   var am2 = distance(word1, word2, { caseSensitive: false });\n"
+                }
+            ],
+            "date": 1667683493131,
+            "name": "Commit-0",
+            "content": "<script setup>\nimport HelloWorld from \"./components/HelloWorld.vue\";\nimport TheWelcome from \"./components/TheWelcome.vue\";\n</script>\n\n<template>\n  <header>\n    <img\n      alt=\"Vue logo\"\n      class=\"logo\"\n      src=\"./assets/logo.svg\"\n      width=\"125\"\n      height=\"125\"\n    />\n\n    <div class=\"wrapper\">\n      <HelloWorld msg=\"You did it!\" />\n    </div>\n  </header>\n</template>\n\n<style scoped>\nheader {\n  line-height: 1.5;\n}\n\n.logo {\n  display: block;\n  margin: 0 auto 2rem;\n}\n\n@media (min-width: 1024px) {\n  header {\n    display: flex;\n    place-items: center;\n    padding-right: calc(var(--section-gap) / 2);\n  }\n\n  .logo {\n    margin: 0 2rem 0 0;\n  }\n\n  header .wrapper {\n    display: flex;\n    place-items: flex-start;\n    flex-wrap: wrap;\n  }\n}\n</style>\n"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/main.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1667683375408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1667740562237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { createApp } from 'vue'\n import App from './App.vue'\n \n import './assets/main.css';\n+import Vue from 'vue';\n import \"bootstrap/dist/css/bootstrap.min.css\";\n import \"bootstrap/dist/js/bootstrap.min.js\";\n \n createApp(App).mount('#app')\n"
+                }
+            ],
+            "date": 1667683375408,
+            "name": "Commit-0",
+            "content": "import { createApp } from 'vue'\nimport App from './App.vue'\n\nimport './assets/main.css';\nimport \"bootstrap/dist/css/bootstrap.min.css\";\nimport \"bootstrap/dist/js/bootstrap.min.js\";\n\ncreateApp(App).mount('#app')\n"
+        }
+    ]
+}

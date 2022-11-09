@@ -1,0 +1,62 @@
+{
+    "sourceFile": "src/components/Grid.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1667937933936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1667938037520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,8 @@\n import.meta.env;\r\n \r\n export default {\r\n   props: [\"results\"],\r\n-  data: function () {\r\n-    //    return {data: [], isLoaded:false}\r\n-    console.log(vm.results);\r\n-  },\r\n };\r\n </script>\r\n \r\n <template>\r\n"
+                },
+                {
+                    "date": 1667938102198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <script>\r\n import.meta.env;\r\n \r\n export default {\r\n-  props: [\"results\"],\r\n+  props: [\"results\", \"value1\"],\r\n };\r\n </script>\r\n \r\n <template>\r\n"
+                },
+                {
+                    "date": 1667938188317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n };\r\n </script>\r\n \r\n <template>\r\n-  <div class=\"container\">\r\n+  {{ value1 }}\r\n+  <!-- <div class=\"container\">\r\n     <table class=\"table\" v-show=\"value1\">\r\n       <thead>\r\n         <tr>\r\n           <th scope=\"col\">#</th>\r\n@@ -39,6 +40,6 @@\n           </td>\r\n         </tr>\r\n       </tbody>\r\n     </table>\r\n-  </div>\r\n+  </div> -->\r\n </template>\r\n"
+                },
+                {
+                    "date": 1667938202542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n };\r\n </script>\r\n \r\n <template>\r\n-  {{ value1 }}\r\n+  {{ value1.InstanceType }}\r\n   <!-- <div class=\"container\">\r\n     <table class=\"table\" v-show=\"value1\">\r\n       <thead>\r\n         <tr>\r\n"
+                },
+                {
+                    "date": 1667938255454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n };\r\n </script>\r\n \r\n <template>\r\n-  {{ value1.InstanceType }}\r\n-  <!-- <div class=\"container\">\r\n+  <div class=\"container\">\r\n     <table class=\"table\" v-show=\"value1\">\r\n       <thead>\r\n         <tr>\r\n           <th scope=\"col\">#</th>\r\n@@ -40,6 +39,6 @@\n           </td>\r\n         </tr>\r\n       </tbody>\r\n     </table>\r\n-  </div> -->\r\n+  </div>\r\n </template>\r\n"
+                },
+                {
+                    "date": 1667938302898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <table class=\"table\" v-show=\"value1\">\r\n       <thead>\r\n         <tr>\r\n           <th scope=\"col\">#</th>\r\n-          <th scope=\"col\">Teacher Answer</th>\r\n+          <th scope=\"col\">Teacher Key</th>\r\n           <th scope=\"col\">Student Answer</th>\r\n           <th scope=\"col\">Score</th>\r\n           <th scope=\"col\">Match?</th>\r\n         </tr>\r\n"
+                },
+                {
+                    "date": 1667938499294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n };\r\n </script>\r\n \r\n <template>\r\n-  <div class=\"container\">\r\n+  <div class=\"container bg-red\">\r\n     <table class=\"table\" v-show=\"value1\">\r\n       <thead>\r\n         <tr>\r\n           <th scope=\"col\">#</th>\r\n"
+                },
+                {
+                    "date": 1667939019650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,12 @@\n           <th scope=\"col\">Match?</th>\r\n         </tr>\r\n       </thead>\r\n       <tbody>\r\n-        <tr v-for=\"(item, index) in results\" style=\"vertical-align: middle\">\r\n+        <tr\r\n+          v-for=\"(item, index) in results.reverse()\"\r\n+          style=\"vertical-align: middle\"\r\n+        >\r\n           <th scope=\"row\">{{ (index += 1) }}</th>\r\n           <td>{{ item.key }}</td>\r\n           <td>{{ item.answer }}</td>\r\n           <td>{{ parseFloat(item.score * 100).toFixed(2) }}%</td>\r\n"
+                },
+                {
+                    "date": 1667939054460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         </tr>\r\n       </thead>\r\n       <tbody>\r\n         <tr\r\n-          v-for=\"(item, index) in results.reverse()\"\r\n+          v-for=\"(item, index) in results.slice().reverse()\"\r\n           style=\"vertical-align: middle\"\r\n         >\r\n           <th scope=\"row\">{{ (index += 1) }}</th>\r\n           <td>{{ item.key }}</td>\r\n"
+                },
+                {
+                    "date": 1667939139632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         </tr>\r\n       </thead>\r\n       <tbody>\r\n         <tr\r\n-          v-for=\"(item, index) in results.slice().reverse()\"\r\n+          v-for=\"(item, index) in results.reverse()\"\r\n           style=\"vertical-align: middle\"\r\n         >\r\n           <th scope=\"row\">{{ (index += 1) }}</th>\r\n           <td>{{ item.key }}</td>\r\n"
+                },
+                {
+                    "date": 1667940006116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n <script>\r\n import.meta.env;\r\n \r\n export default {\r\n-  props: [\"results\", \"value1\"],\r\n+  props: [\"results\", \"showGrid\"],\r\n };\r\n </script>\r\n \r\n <template>\r\n   <div class=\"container bg-red\">\r\n-    <table class=\"table\" v-show=\"value1\">\r\n+    <table class=\"table\" v-show=\"showGrid\">\r\n       <thead>\r\n         <tr>\r\n           <th scope=\"col\">#</th>\r\n           <th scope=\"col\">Teacher Key</th>\r\n"
+                }
+            ],
+            "date": 1667937933936,
+            "name": "Commit-0",
+            "content": "<script>\r\nimport.meta.env;\r\n\r\nexport default {\r\n  props: [\"results\"],\r\n  data: function () {\r\n    //    return {data: [], isLoaded:false}\r\n    console.log(vm.results);\r\n  },\r\n};\r\n</script>\r\n\r\n<template>\r\n  <div class=\"container\">\r\n    <table class=\"table\" v-show=\"value1\">\r\n      <thead>\r\n        <tr>\r\n          <th scope=\"col\">#</th>\r\n          <th scope=\"col\">Teacher Answer</th>\r\n          <th scope=\"col\">Student Answer</th>\r\n          <th scope=\"col\">Score</th>\r\n          <th scope=\"col\">Match?</th>\r\n        </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr v-for=\"(item, index) in results\" style=\"vertical-align: middle\">\r\n          <th scope=\"row\">{{ (index += 1) }}</th>\r\n          <td>{{ item.key }}</td>\r\n          <td>{{ item.answer }}</td>\r\n          <td>{{ parseFloat(item.score * 100).toFixed(2) }}%</td>\r\n          <td>\r\n            <p\r\n              class=\"p-1 px-3 rounded\"\r\n              style=\"width: fit-content; margin: 0px\"\r\n              :style=\"\r\n                item.likelyhood\r\n                  ? { backgroundColor: 'lightgreen' }\r\n                  : { backgroundColor: 'red' }\r\n              \"\r\n            >\r\n              {{ item.likelyhood ? \"Yes\" : \"No\" }}\r\n            </p>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>\r\n</template>\r\n"
+        }
+    ]
+}

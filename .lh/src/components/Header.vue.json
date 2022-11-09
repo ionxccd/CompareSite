@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/components/Header.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1667937427009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1667938575750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Pricing</a></li>\r\n           </ul>\r\n         </div>\r\n-        <a href=\"#\" class=\"nav-link\">Sign In</a>\r\n       </div>\r\n     </nav>\r\n   </header>\r\n </template>\r\n"
+                },
+                {
+                    "date": 1667938585873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,15 +2,15 @@\n   <header class=\"py-3\">\r\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\r\n       <div class=\"container\">\r\n         <h1 class=\"navbar-brand text-dark\">Home</h1>\r\n-        <div class=\"collapse navbar-collapse\">\r\n+        <!-- <div class=\"collapse navbar-collapse\">\r\n           <ul class=\"navbar-nav\">\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Pricing</a></li>\r\n           </ul>\r\n-        </div>\r\n+        </div> -->\r\n       </div>\r\n     </nav>\r\n   </header>\r\n </template>\r\n"
+                },
+                {
+                    "date": 1667938598293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n <template>\r\n   <header class=\"py-3\">\r\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\r\n-      <div class=\"container\">\r\n-        <h1 class=\"navbar-brand text-dark\">Home</h1>\r\n-        <!-- <div class=\"collapse navbar-collapse\">\r\n+      <div class=\"container text-dark\">\r\n+        <h1 class=\"navbar-brand\">Home</h1>\r\n+        <div class=\"collapse navbar-collapse\">\r\n           <ul class=\"navbar-nav\">\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Pricing</a></li>\r\n           </ul>\r\n-        </div> -->\r\n+        </div>\r\n       </div>\r\n     </nav>\r\n   </header>\r\n </template>\r\n"
+                },
+                {
+                    "date": 1667938610866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n <template>\r\n   <header class=\"py-3\">\r\n     <nav class=\"navbar navbar-expand-lg navbar-dark\">\r\n-      <div class=\"container text-dark\">\r\n-        <h1 class=\"navbar-brand\">Home</h1>\r\n-        <div class=\"collapse navbar-collapse\">\r\n+      <div class=\"container\">\r\n+        <h1 class=\"navbar-brand text-dark\">Home</h1>\r\n+        <!-- <div class=\"collapse navbar-collapse\">\r\n           <ul class=\"navbar-nav\">\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\r\n             <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Pricing</a></li>\r\n           </ul>\r\n-        </div>\r\n+        </div> -->\r\n       </div>\r\n     </nav>\r\n   </header>\r\n </template>\r\n"
+                }
+            ],
+            "date": 1667937427009,
+            "name": "Commit-0",
+            "content": "<template>\r\n  <header class=\"py-3\">\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark\">\r\n      <div class=\"container\">\r\n        <h1 class=\"navbar-brand text-dark\">Home</h1>\r\n        <div class=\"collapse navbar-collapse\">\r\n          <ul class=\"navbar-nav\">\r\n            <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Home</a></li>\r\n            <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">About</a></li>\r\n            <li class=\"nav-item\"><a href=\"#\" class=\"nav-link\">Pricing</a></li>\r\n          </ul>\r\n        </div>\r\n        <a href=\"#\" class=\"nav-link\">Sign In</a>\r\n      </div>\r\n    </nav>\r\n  </header>\r\n</template>\r\n"
+        }
+    ]
+}

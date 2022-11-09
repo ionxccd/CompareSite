@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/dummy_text.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1667740830699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1667740830699,
+            "name": "Commit-0",
+            "content": "To play game, go inside the Portal 2 Complete folder > Portal 2 > Right click and run 'Portal2' as administrator\r\n\r\nThis download includes the complete edition:\r\n     – Aperture Tag: The Paint Gun Testing Initiative\r\n     – Portal Stories: Mel\r\n     – Thinking with Time Machine\r\n     – Portal 2 – The Final Hours\r\n\r\n\r\nYou can play co-op with 2 controllers in one PC, but you must enable it in console\r\n\r\nIf you get a \"Steam has rejected client\" error, Find file \"steam_appid\" (path where you copy game ...\\Portal 2 \r\nComplete\\Portal 2\\steam_appid) and edit with notepad from \"620\" to \r\n\"Portal 2 620\", save and start game. You have to do it every time. \r\nDont panic when save game is empty. Just again edit steam_appid and it'll appear\r\n\r\nFollow this: https://i.imgur.com/ReTGqT9.png\r\n\r\n\r\n\r\nFor more FREE PC games, visit steamunlocked.com"
+        }
+    ]
+}
